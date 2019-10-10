@@ -2,6 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-import './yorha.css';
+import 'yorha/dist/yorha.min.css';
 
 ReactDOM.render(<App/>, document.getElementById('root'));
