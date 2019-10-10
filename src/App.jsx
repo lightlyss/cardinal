@@ -36,7 +36,7 @@ class App extends React.Component {
   render() {
     return (<div>
       <h1>Cardinal</h1>
-      <p>Named after SAO's central authority.</p>
+      <p>Live2D x ReactJS!</p>
       <h2>Configuration</h2>
       <form>
         <fieldset>
