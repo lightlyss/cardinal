@@ -1,0 +1,7 @@
+{
+  "default": [
+    {"id": "000", "label": "Shizuku", "prefix": "shizuku"},
+    {"id": "001", "label": "Haru (1)", "prefix": "haru01"},
+    {"id": "002", "label": "Haru (2)", "prefix": "haru02"}
+  ]
+}
