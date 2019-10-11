@@ -1,4 +1,5 @@
 [![Build Status](https://github.com/lightlyss/cardinal/workflows/build/badge.svg)](https://github.com/lightlyss/cardinal)
+[![Deploy Status](https://github.com/lightlyss/cardinal/workflows/deployment/badge.svg)](https://github.com/lightlyss/cardinal)
 # Cardinal
 > The «Cardinal System» (カーディナル・システム), occasionally referred to simply
 > as Cardinal, serves as the primary driving and management force of nearly all
