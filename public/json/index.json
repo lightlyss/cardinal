@@ -1,0 +1,134 @@
+{
+  "default": {
+    "label": "Default",
+    "width": 300,
+    "height": 600,
+    "hOffset": 0,
+    "vOffset": -20,
+    "scale": 1,
+    "models": [
+      {"id": "000", "label": "Shizuku", "prefix": "shizuku"},
+      {"id": "001", "label": "Haru (1)", "prefix": "haru01"},
+      {"id": "002", "label": "Haru (2)", "prefix": "haru02"}
+    ]
+  },
+
+  "magireco": {
+    "label": "Magia Record",
+    "width": 400,
+    "height": 700,
+    "hOffset": 0,
+    "vOffset": -40,
+    "scale": 1.2,
+    "models": [
+      {"id": "200200", "label": "Akemi Homura"},
+      {"id": "200201", "label": "Akemi Homura (School)"},
+
+      {"id": "100800", "label": "Alina Gray"},
+      {"id": "100801", "label": "Alina Gray (Uniform)"},
+      {"id": "100850", "label": "Alina Gray (Swimsuit)"},
+
+      {"id": "403100", "label": "Amano Suzune"},
+      {"id": "403101", "label": "Amano Suzune (School)"},
+
+      {"id": "301000", "label": "Ami Ria"},
+      {"id": "301001", "label": "Ami Ria (School)"},
+
+      {"id": "303700", "label": "Anna Meru"},
+      {"id": "303701", "label": "Anna Meru (School)"},
+      {"id": "303750", "label": "Anna Meru (Winter)"},
+
+      {"id": "303500", "label": "Chiaki Riko"},
+      {"id": "303501", "label": "Chiaki Riko (School)"},
+      {"id": "303550", "label": "Chiaki Riko (Winter)"},
+
+      {"id": "304400", "label": "Chitama Ranka"},
+      {"id": "304401", "label": "Chitama Ranka (School)"},
+
+      {"id": "303300", "label": "Fumino Sayuki"},
+      {"id": "303301", "label": "Fumino Sayuki (School)"},
+
+      {"id": "110800", "label": "Holy Alina"},
+      {"id": "120800", "label": "Holy Alina (EX)"},
+
+      {"id": "302500", "label": "Isuzu Ren"},
+      {"id": "302501", "label": "Isuzu Ren (School)"},
+      {"id": "302502", "label": "Isuzu Ren (Casual)"},
+      {"id": "302550", "label": "Isuzu Ren (Winter)"},
+      {"id": "302551", "label": "Isuzu Ren (Swimsuit)"},
+
+      {"id": "302900", "label": "Kagami Masara"},
+      {"id": "302901", "label": "Kagami Masara (School)"},
+      {"id": "302902", "label": "Kagami Masara (Casual)"},
+      {"id": "302950", "label": "Kagami Masara (Swimsuit)"},
+
+      {"id": "200100", "label": "Kaname Madoka"},
+      {"id": "200101", "label": "Kaname Madoka (School)"},
+      {"id": "200150", "label": "Kaname Madoka (Winter)"},
+      {"id": "200151", "label": "Kaname Madoka (Swimsuit)"},
+      {"id": "200152", "label": "Kaname Madoka (Loungewear)"},
+      {"id": "210100", "label": "Kaname Madoka (Ultimate)"},
+
+      {"id": "401100", "label": "Kazumi"},
+      {"id": "401101", "label": "Kazumi (Casual)"},
+
+      {"id": "303200", "label": "Kozue Mayu"},
+      {"id": "303201", "label": "Kozue Mayu (School)"},
+
+      {"id": "390000", "label": "Kuro"},
+
+      {"id": "402700", "label": "Lapine"},
+      {"id": "402701", "label": "Lapine (Maskless)"},
+
+      {"id": "305300", "label": "Makino Ikumi"},
+      {"id": "305301", "label": "Makino Ikumi (School)"},
+      {"id": "305302", "label": "Makino Ikumi (Maid)"},
+      {"id": "305303", "label": "Makino Ikumi (Black Feather)"},
+
+      {"id": "200400", "label": "Miki Sayaka"},
+      {"id": "200401", "label": "Miki Sayaka (School)"},
+      {"id": "200450", "label": "Miki Sayaka (Winter)"},
+      {"id": "200451", "label": "Miki Sayaka (Swimsuit)"},
+      {"id": "200452", "label": "Miki Sayaka (Loungewear)"},
+      {"id": "200453", "label": "Miki Sayaka (Mermyngii・Miracle Swimmer)"},
+
+      {"id": "100900", "label": "Minami Rena"},
+      {"id": "100901", "label": "Minami Rena (School)"},
+      {"id": "100950", "label": "Minami Rena (Christmas)"},
+      {"id": "100951", "label": "Minami Rena (Swimsuit)"},
+
+      {"id": "101200", "label": "Misono Karin"},
+      {"id": "101201", "label": "Misono Karin (School)"},
+      {"id": "101250", "label": "Misono Karin (Swimsuit)"},
+
+      {"id": "403300", "label": "Narumi Arisa"},
+      {"id": "403301", "label": "Narumi Arisa (School)"},
+
+      {"id": "404600", "label": "Oshino Shinobu"},
+      {"id": "404601", "label": "Oshino Shinobu (Casual)"},
+
+      {"id": "304300", "label": "Rumor of the 10,000-Year Sakura"},
+      {"id": "304301", "label": "Rumor of the 10,000-Year Sakura (School)"},
+      {"id": "304302", "label": "Rumor of the 10,000-Year Sakura (Casual)"},
+
+      {"id": "102001", "label": "Satomi Kagome (School)"},
+
+      {"id": "100700", "label": "Satomi Touka"},
+      {"id": "100701", "label": "Satomi Touka (School)"},
+      {"id": "100702", "label": "Satomi Touka (Casual)"},
+      {"id": "100750", "label": "Satomi Touka (Swimsuit)"},
+
+      {"id": "101500", "label": "Tamaki Ui"},
+      {"id": "101501", "label": "Tamaki Ui (School)"},
+      {"id": "101502", "label": "Tamaki Ui (Casual)"},
+      {"id": "101503", "label": "Tamaki Ui (Loungewear)"},
+      {"id": "101550", "label": "Tamaki Ui (Swimsuit)"},
+
+      {"id": "402100", "label": "Tart"},
+      {"id": "402101", "label": "Tart (Casual)"},
+
+      {"id": "102700", "label": "Toki Sunao"},
+      {"id": "102701", "label": "Toki Sunao (School)"}
+    ]
+  }
+}

@@ -6,10 +6,15 @@
 > VRMMOs.
 
 ## Description
-A React app to demonstrate Live2D on the web.
+A React app to demonstrate Live2D on the web. Currently hosts various models
+as examples. Powered by `live2d-widget.js`.
 
 ## Development
 `npm start` to run a dev server at port `3000`.
 
 ## Building
 `npm run build` to generate a production build.
+
+## Disclaimer
+Repository contains model assets belonging to Aniplex, f4samurai.
+No ownership is claimed or implied.
