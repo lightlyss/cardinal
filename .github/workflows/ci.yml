@@ -22,8 +22,8 @@ jobs:
         CI: true
     - name: Test React build
       run: |
-        npm i -g node-static
-        static docs -p 3000
+        npm i -g node-static@0.7.11
+        static docs -p 3000 &
         npm test
       env:
         CI: true
