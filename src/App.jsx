@@ -12,13 +12,14 @@ class App extends React.Component {
   }
 
   // Globally loads Live2D
-  static initL2D(basePath, prefix, width, height, hOffset, vOffset, scale) {
+  static initL2D(basePath, prefix, width, height, hOffset, vOffset, scale, cid) {
     if (prefix) prefix += '.';
     else prefix = '';
     const jsonPath = `${basePath}/${prefix}model.json`;
     L2Dwidget.init({
       model: {jsonPath, scale},
-      display: {width, height, hOffset, vOffset}
+      display: {width, height, hOffset, vOffset},
+      name: {canvas: cid}
     });
   }
 
@@ -79,7 +80,8 @@ class App extends React.Component {
       this.state.index[family].height,
       this.state.index[family].hOffset,
       this.state.index[family].vOffset,
-      this.state.index[family].scale
+      this.state.index[family].scale,
+      `l2d-${family}-${model.id}`
     );
   }
 
