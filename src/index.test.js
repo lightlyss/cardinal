@@ -26,11 +26,13 @@ afterAll(async () => {
   return browser.close();
 });
 
-test('loads Shizuku by default', async () => {
-  await page.goto(URL);
-  await waitOn('#selectf');
+afterEach(async () => {
   fSelector = await page.$('#selectf');
   mSelector = await page.$('#selectm');
+});
+
+test('loads Shizuku by default', async () => {
+  await page.goto(URL);
   await waitOn('#l2d-default-000');
   expect(page.url()).toBe(URL);
 });
