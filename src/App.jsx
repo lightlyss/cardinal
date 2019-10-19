@@ -41,7 +41,9 @@ class App extends React.Component {
   handleFamilyChange(ev) {
     const family = this.getFamilyByLabel(ev.target.value);
     if (family === this.state.currentFamily) return;
-    this.setState({currentFamily: family});
+    const model = this.state.index[family].models[0];
+    this.setState({currentFamily: family, currentModel: model});
+    window.location.search = `?model=${family}-${model.id}`;
   }
 
   // On select model
