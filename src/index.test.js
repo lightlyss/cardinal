@@ -1,8 +1,11 @@
 import Puppeteer from 'puppeteer';
 
 const URL = 'http://localhost:3000/';
+const DEBUG = false;
 let browser = null, page = null;
 let fSelector = null, mSelector = null;
+
+// Tools
 
 const waitOn = async selector => {
   return page.waitForSelector(selector, {
@@ -11,9 +14,16 @@ const waitOn = async selector => {
   });
 };
 
+const verifyLoaded = async tag => {
+  await waitOn(`#l2d-${tag}`);
+  expect(page.url()).toBe(`${URL}?model=${tag}`);
+};
+
+// Framework
+
 beforeAll(async () => {
   jest.setTimeout(5*60*1000);
-  browser = await Puppeteer.launch({headless: true});
+  browser = await Puppeteer.launch({headless: !DEBUG});
   page = await browser.newPage();
   return page.setViewport({
     width: 1280,
@@ -31,28 +41,42 @@ afterEach(async () => {
   mSelector = await page.$('#selectm');
 });
 
+// Test scenario
+
 test('loads Shizuku by default', async () => {
   await page.goto(URL);
   await waitOn('#l2d-default-000');
   expect(page.url()).toBe(URL);
 });
 
-test('selects a different family', async () => {
+test('selects Magia Record', async () => {
   await fSelector.select('Magia Record');
-  await mSelector.select('Holy Alina (EX)');
-  await waitOn('#l2d-magireco-120800');
-  expect(page.url()).toBe(`${URL}?model=magireco-120800`);
+  await verifyLoaded('magireco-200200');
 });
 
-test('selects a different model', async () => {
+test('noops if selection unchanged', async () => {
+  await mSelector.select('Akemi Homura');
+  await verifyLoaded('magireco-200200');
+  await fSelector.select('Magia Record');
+  await verifyLoaded('magireco-200200');
+});
+
+test('loads Holy Alina', async () => {
+  await mSelector.select('Holy Alina (EX)');
+  await verifyLoaded('magireco-120800');
+});
+
+test('loads Kagami Masara', async () => {
   await mSelector.select('Kagami Masara (Casual)');
-  await waitOn('#l2d-magireco-302902');
-  expect(page.url()).toBe(`${URL}?model=magireco-302902`);
+  await verifyLoaded('magireco-302902');
 });
 
 test('selects the default family', async () => {
   await fSelector.select('Default');
+  await verifyLoaded('default-000');
+});
+
+test('loads Haru', async () => {
   await mSelector.select('Haru (2)');
-  await waitOn('#l2d-default-002');
-  expect(page.url()).toBe(`${URL}?model=default-002`);
+  await verifyLoaded('default-002');
 });
