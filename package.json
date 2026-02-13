@@ -27,7 +27,7 @@
     "live2d-widget": "3.1.4",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "yorha": "lightlyss/yorha#v1.2.1"
   },
   "browserslist": {
